@@ -20,12 +20,13 @@ export default [
     config: {
       enabled: true,
       origin: [
-        'http://localhost:3000',          // local frontend
+        'http://localhost:3000',
         'http://127.0.0.1:3000',
-        'https://westernbeachventures.netlify.app/', // Netlify
+        'https://westernbeachventures.netlify.app',
       ],
-      headers: '*',
+      headers: ['Content-Type', 'Authorization'],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+      credentials: true,
     },
   },
 
