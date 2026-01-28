@@ -22,7 +22,7 @@ export default [
       origin: [
         'http://localhost:3000',          // local frontend
         'http://127.0.0.1:3000',
-        'https://westernbeachventures.netlify.app', // Netlify
+        'https://westernbeachventures.netlify.app/', // Netlify
       ],
       headers: '*',
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
