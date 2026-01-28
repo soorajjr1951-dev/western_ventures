@@ -1,41 +1,7 @@
-# ======================
-# Node / Next.js
-# ======================
-node_modules/
-.next/
-out/
-npm-debug.log*
-yarn.lock
-
-# ======================
-# Strapi
-# ======================
-backend/node_modules/
-backend/.cache/
-backend/build/
-backend/.tmp/
-backend/.env
-
-# ======================
-# Environment files
-# ======================
+node_modules
+.next
 .env
-.env.local
-.env.production
-
-# ======================
-# OS / Editor junk
-# ======================
-.DS_Store
-Thumbs.db
-
-# ======================
-# Python / misc
-# ======================
-__pycache__/
-*.pyc
-
-# ======================
-# Netlify
-# ======================
-.netlify/
+.env.*
+.tmp
+.cache
+build
