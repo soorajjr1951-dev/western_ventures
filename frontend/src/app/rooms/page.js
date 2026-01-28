@@ -126,7 +126,7 @@ export default function RoomsPage() {
                   <h3>{room.name}</h3>
 
                   <p className="description">
-                    {room.description ||
+                    {room.shortDescription ||
                       "A thoughtfully designed coastal retreat crafted for calm, privacy, and rest."}
                   </p>
 

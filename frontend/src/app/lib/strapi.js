@@ -1,10 +1,10 @@
-const STRAPI_URL = "http://localhost:1337";
+const STRAPI_URL =
+  process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337";
 
 export async function getRooms() {
-  const res = await fetch(
-    `${STRAPI_URL}/api/rooms?populate=*`,
-    { cache: "no-store" }
-  );
+  const res = await fetch(`${STRAPI_URL}/api/rooms?populate=*`, {
+    cache: "no-store",
+  });
 
   if (!res.ok) {
     throw new Error("Failed to fetch rooms");
@@ -35,7 +35,7 @@ export async function getRooms() {
 export async function getRoomBySlug(slug) {
   const res = await fetch(
     `${STRAPI_URL}/api/rooms?filters[slug][$eq]=${slug}&populate=*`,
-    { cache: "no-store" }
+    { cache: "no-store" },
   );
 
   if (!res.ok) {
