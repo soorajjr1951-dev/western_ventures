@@ -1,0 +1,29 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn.lock
+
+# Next.js
+.next/
+out/
+
+# Strapi
+backend/node_modules/
+backend/.cache/
+backend/build/
+backend/.tmp/
+backend/.env
+
+# Python / OS junk
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+.env.local
+.env.production
+
+# Netlify
+.netlify/
