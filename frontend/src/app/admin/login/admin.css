@@ -1,0 +1,32 @@
+.admin-center {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-card {
+  width: 420px;
+  padding: 40px;
+  background: white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.admin-page {
+  padding: 60px;
+}
+
+.admin-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
