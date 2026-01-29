@@ -52,7 +52,7 @@ export default function SpaPage() {
         </div>
 
         <h1>
-          Joy <span>Ayurvedic</span> Spa.
+          Joy <span>Ayurvedic</span> Spa
         </h1>
 
         <p>
