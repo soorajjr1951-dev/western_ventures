@@ -7,7 +7,7 @@ export async function getRooms() {
     .order("price", { ascending: true });
 
   if (error) {
-    console.error(error);
+    console.error("Supabase getRooms error:", error);
     return [];
   }
 
@@ -22,7 +22,7 @@ export async function getRoomBySlug(slug) {
     .single();
 
   if (error) {
-    console.error(error);
+    console.error("Supabase getRoomBySlug error:", error);
     return null;
   }
 
